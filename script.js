@@ -56,6 +56,20 @@ console.log(...newArr);
 const newmenu = [...restaurant.mainMenu, 'Gnocci'];
 console.log(newmenu);
 
+// Copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+
+// Join 2 arrays or more
+const menu1 = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(menu1);
+
+// Iterables: arrays, strings, maps, sets but not objects
+const str = 'Spencer';
+const letters = [...str, ' ', 'S'];
+console.log(letters);
+
+console.log(...str);
+
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
 
